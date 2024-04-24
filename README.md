@@ -16,7 +16,11 @@ This repository contains scripts and resources for training a transformer model 
 
 ## Model Training
 
-The model utilizes the `google/gemma-7b` transformer architecture from HuggingFace. Training is performed on NVIDIA 2x3090 GPUs. The training process emphasizes efficient learning and memory management to handle the extensive dataset provided by the Oxford Corpus.
+The model utilizes the `google/gemma-7b` transformer architecture from HuggingFace. Training is performed on NVIDIA 2x3090 GPUs. The training process emphasizes efficient learning and memory management to handle the extensive dataset provided by the Oxford Corpus. Key training enhancements include:
+
+- **QLora**: Quantized Layers for Reduced memory.
+- **Peft**: Progressive layer freezing for efficiency.
+- **EarlyStopping**: To prevent overfitting and optimize training time.
 
 ## Model Evaluation
 
